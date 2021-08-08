@@ -6,7 +6,10 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
+    public bool isJumping;
+    public bool doubleJump;
     private Rigidbody2D rig;
+    private int GROUND_LAYER = 8;
 
     void Start()
     {
@@ -28,9 +31,25 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
             rig.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == GROUND_LAYER)
+        {
+            isJumping = false;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == GROUND_LAYER)
+        {
+            isJumping = true;
         }
     }
 }
