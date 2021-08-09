@@ -7618,7 +7618,7 @@ GameObject:
   - component: {fileID: 623920893}
   - component: {fileID: 623920892}
   - component: {fileID: 623920894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8586,6 +8586,7 @@ GameObject:
   - component: {fileID: 1076287430}
   - component: {fileID: 1076287431}
   - component: {fileID: 1076287432}
+  - component: {fileID: 1076287433}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -8718,9 +8719,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 10
+  jumpForce: 9
   isJumping: 0
   doubleJump: 0
+--- !u!95 &1076287433
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076287427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2de93fefea21a2e419736925b6c83043, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1175106512
 GameObject:
   m_ObjectHideFlags: 0
