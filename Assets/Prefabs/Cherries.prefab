@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdeb0de09bdf1d41b3af48f2aa4cfb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 1
   collectedAnim: {fileID: 2105392563365472519}
 --- !u!1001 &1187065279302245274
 PrefabInstance:
