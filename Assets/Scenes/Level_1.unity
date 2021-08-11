@@ -8224,7 +8224,7 @@ GameObject:
   - component: {fileID: 623920893}
   - component: {fileID: 623920892}
   - component: {fileID: 623920894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9256,7 +9256,7 @@ GameObject:
   - component: {fileID: 842397582}
   - component: {fileID: 842397585}
   - component: {fileID: 842397586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Falling Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
