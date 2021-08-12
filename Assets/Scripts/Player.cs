@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
 
     private int GROUND_LAYER = 8;
+    private int DESTROY_LAYER = 9;
 
     void Start()
     {
@@ -83,6 +84,12 @@ public class Player : MonoBehaviour
             isJumping = false;
             anim.SetBool("jump", false);
             anim.SetBool("doubleJump", false);
+        }
+
+        if (collision.gameObject.layer == DESTROY_LAYER)
+        {
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
         }
     }
 
